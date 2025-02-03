@@ -113,7 +113,7 @@ define('forum/register', [
 
     function validateUsername(username, callback) {
         callback = callback || function () {};
-        console.log("here");
+
         const username_notify = $('#username-notify');
         const userslug = slugify(username);
         if (username.length < ajaxify.data.minimumUsernameLength ||
